@@ -1,8 +1,13 @@
 {
   "slug": "seguro-convenio-construccion-valencia",
-  "verificado": false,
-  "sector": { "nombre": "Construcción", "cnae": "41-43" },
-  "provincia": { "nombre": "Valencia" },
+  "verificado": true,
+  "sector": {
+    "nombre": "Construcción",
+    "cnae": "41-43"
+  },
+  "provincia": {
+    "nombre": "Valencia"
+  },
   "seo": {
     "title": "Seguro de Convenio Construcción Valencia | Auditoría gratuita de capitales",
     "description": "¿Cubre su póliza lo que exige el convenio de la construcción de Valencia? Auditoría gratuita de capitales asegurados. Evite indemnizaciones a cargo de la empresa.",
@@ -14,19 +19,19 @@
   },
   "estadisticas": [
     {
-      "cifra": "X.XXX",
-      "texto": "accidentes de trabajo con baja registrados en la provincia de Valencia en el sector de la construcción en el último año. DATO PENDIENTE DE VERIFICAR CON EL AVANCE MITES.",
-      "fuente": "MITES, Avance Estadística de Accidentes de Trabajo — SUSTITUIR"
+      "cifra": "4.347",
+      "texto": "accidentes de trabajo con baja en jornada registrados en el sector de la construcción en la provincia de Valencia en 2025, un 5% más que el año anterior. El índice de incidencia del sector (5.495 por cada 100.000 trabajadores) duplica con creces la media provincial (2.571).",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
     },
     {
-      "cifra": "XX",
-      "texto": "accidentes mortales en jornada laboral en el sector construcción. DATO PENDIENTE DE VERIFICAR.",
-      "fuente": "MITES — SUSTITUIR"
+      "cifra": "14",
+      "texto": "accidentes mortales en jornada en la construcción de la provincia de Valencia en 2025. Es la actividad con más fallecidos de la provincia: el 29,2% del total de muertes en el trabajo.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
     },
     {
-      "cifra": "X de cada X",
-      "texto": "muertes por accidente laboral tienen causa cardiovascular (infartos y derrames), cubiertas por convenio también fuera de obra. DATO PENDIENTE DE VERIFICAR CON INFORME INSST.",
-      "fuente": "INSST, Informe anual — SUSTITUIR"
+      "cifra": "54,2%",
+      "texto": "de los accidentes laborales mortales de la provincia de Valencia en 2025 fueron patologías no traumáticas: infartos y derrames cerebrales. El convenio también obliga a indemnizar estas contingencias, aunque no ocurran en la obra.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
     }
   ],
   "agujero": {
@@ -69,5 +74,10 @@
       "pregunta": "¿La auditoría gratuita me compromete a contratar?",
       "respuesta": "No. Entregamos el informe con el desfase detectado, si existe, y usted decide. Nuestro trabajo es que la decisión la tome con los números delante."
     }
-  ]
+  ],
+  "fuente_principal": {
+    "titulo": "INVASSAT — Estadísticas de accidentes de trabajo en la Comunitat Valenciana. Informe anual 2025 (EA03-260102)",
+    "nota": "Datos provisionales enero-diciembre 2025, sistema Delt@ (Ministerio de Trabajo y Economía Social). Publicado en enero de 2026.",
+    "url": "https://invassat.gva.es/es/accidentes-de-trabajo"
+  }
 }
