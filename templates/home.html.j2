@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguro de Convenio Colectivo por sector y provincia | Auditoría gratuita de capitales</title>
+  <meta name="description" content="Auditoría gratuita de su seguro de convenio: comprobamos si los capitales asegurados cumplen el convenio colectivo vigente de su sector y provincia. Evite indemnizaciones a cargo de la empresa.">
+  <meta property="og:title" content="Seguro de Convenio Colectivo por sector y provincia | Auditoría gratuita">
+  <meta property="og:description" content="Comprobamos si su póliza cubre lo que exige el convenio colectivo vigente. Informes con estadística oficial de siniestralidad por sector y provincia.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilo.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for l in landings %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": {{ (l.sector.nombre ~ " — " ~ l.provincia.nombre) | tojson }},
+        "url": {{ ("/" ~ l.slug ~ "/") | tojson }}
+      }{{ "," if not loop.last }}
+      {% endfor %}
+    ]
+  }
+  </script>
+  <style>
+    /* Estilos mínimos propios de la home; el resto se hereda de estilo.css */
+    .indice { background: var(--paper); }
+    .indice__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.6rem;
+      max-width: 72rem;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+    .tarjeta {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 6px;
+      padding: 1.6rem;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .tarjeta:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.10); }
+    .tarjeta__eyebrow {
+      font-family: var(--f-mono, monospace);
+      font-size: .78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--steel, #5A6B78);
+      margin-bottom: .5rem;
+    }
+    .tarjeta__titulo { font-family: var(--f-display); font-size: 1.25rem; font-weight: 800; line-height: 1.15; }
+    .tarjeta__texto { margin-top: .6rem; font-size: .95rem; color: var(--steel, #5A6B78); }
+    .tarjeta__enlace { display: inline-block; margin-top: 1rem; font-weight: 700; color: inherit; }
+    .tarjeta:hover .tarjeta__enlace { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header class="barra">
+  <span class="barra__marca">Prevención y Acompañamiento</span>
+</header>
+
+<section class="hero">
+  <p class="hero__eyebrow">Seguros colectivos de convenio · Auditoría de capitales</p>
+  <h1>¿Su póliza de convenio cubre lo que el convenio exige hoy?</h1>
+  <p class="hero__dolor">Los convenios colectivos actualizan periódicamente las indemnizaciones por fallecimiento e invalidez. Si la póliza no se revisa a la vez, la diferencia la paga la empresa con su patrimonio. Elija su sector y provincia y compruebe el riesgo con estadística oficial.</p>
+</section>
+
+<section class="indice">
+  <h2 class="seccion__titulo">Informes por sector y provincia</h2>
+  <div class="indice__grid">
+    {% for l in landings %}
+    <a class="tarjeta" href="/{{ l.slug }}/">
+      <p class="tarjeta__eyebrow">CNAE {{ l.sector.cnae }} · {{ l.provincia.nombre }}</p>
+      <p class="tarjeta__titulo">Convenio de {{ l.sector.nombre }} en {{ l.provincia.nombre }}</p>
+      <p class="tarjeta__texto">Siniestralidad oficial del sector en la provincia, el desfase de capitales que revisa la Inspección y la auditoría gratuita de su póliza.</p>
+      <span class="tarjeta__enlace">Ver informe y auditoría →</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<footer class="pie">
+  <p>© {{ anio }} Prevención y Acompañamiento. Estadísticas elaboradas a partir de fuentes oficiales (Delt@ · Ministerio de Trabajo y Economía Social · institutos autonómicos de seguridad y salud laboral).</p>
+</footer>
+
+</body>
+</html>
