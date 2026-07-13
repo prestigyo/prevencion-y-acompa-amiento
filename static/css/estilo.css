@@ -1,0 +1,185 @@
+/* ═══════════════════════════════════════════════════════════
+   Prevención y Acompañamiento — identidad "señal industrial"
+   Paleta: azul acero + ámbar señal + rojo dato de riesgo
+   Tipos:  Archivo (display) · Public Sans (texto) · IBM Plex Mono (datos)
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --ink:    #182430;   /* azul acero oscuro: texto y fondos serios   */
+  --paper:  #F7F8F6;   /* papel de informe                            */
+  --amber:  #FFB300;   /* ámbar de señalización: acción y alerta      */
+  --risk:   #B3362B;   /* rojo reservado a cifras de riesgo           */
+  --steel:  #55636F;   /* gris acero: texto secundario                */
+  --line:   #D8DDE0;
+
+  --f-display: "Archivo", sans-serif;
+  --f-body:    "Public Sans", sans-serif;
+  --f-data:    "IBM Plex Mono", monospace;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: var(--f-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  font-size: 1.0625rem;
+}
+
+h1, h2 { font-family: var(--f-display); line-height: 1.08; }
+
+.seccion__titulo {
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+  font-weight: 800;
+  font-stretch: 90%;
+  max-width: 52rem;
+  margin: 0 auto 2.2rem;
+}
+.seccion__titulo--claro { color: var(--paper); }
+
+section { padding: 4.5rem clamp(1.25rem, 5vw, 4rem); }
+
+/* ── Barra superior ── */
+.barra {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: .8rem clamp(1.25rem, 5vw, 4rem);
+  background: var(--ink); color: var(--paper);
+}
+.barra__marca { font-family: var(--f-display); font-weight: 700; letter-spacing: .02em; }
+.barra__cta { color: var(--amber); font-weight: 600; text-decoration: none; font-size: .95rem; }
+.barra__cta:hover { text-decoration: underline; }
+
+/* ── 1. Hero ── */
+.hero {
+  background:
+    linear-gradient(rgba(24,36,48,.94), rgba(24,36,48,.97)),
+    repeating-linear-gradient(-45deg, #223140 0 26px, #1b2836 26px 52px);
+  color: var(--paper);
+  padding-top: 5.5rem; padding-bottom: 5.5rem;
+  border-bottom: 6px solid var(--amber);
+}
+.hero__eyebrow {
+  font-family: var(--f-data); font-size: .85rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--amber); margin-bottom: 1.2rem;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 900; font-stretch: 95%;
+  max-width: 56rem; margin-bottom: 1.2rem;
+}
+.hero__dolor { max-width: 44rem; font-size: 1.2rem; color: #C9D2D9; margin-bottom: 2.2rem; }
+.hero__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem; }
+.hero__nota { font-size: .9rem; color: #9AA8B3; }
+
+/* ── Botones ── */
+.btn {
+  display: inline-block; text-decoration: none; cursor: pointer;
+  font-family: var(--f-body); font-weight: 700; font-size: 1.05rem;
+  padding: .95rem 1.8rem; border: none;
+}
+.btn--primario { background: var(--amber); color: var(--ink); }
+.btn--primario:hover { background: #FFC533; }
+.btn--primario:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.btn--ancho { width: 100%; margin-top: 1.4rem; }
+
+/* ── 2. Placas de riesgo (elemento firma) ── */
+.placas { background: var(--paper); }
+.placas__grid {
+  display: grid; gap: 1.5rem; max-width: 62rem; margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.placa {
+  background: #FFFFFF; border: 1px solid var(--line);
+  padding: 0 1.5rem 1.5rem;
+  box-shadow: 0 2px 0 var(--line);
+}
+.placa__banda {
+  height: 14px; margin: 0 -1.5rem 1.4rem;
+  background: repeating-linear-gradient(-45deg, var(--amber) 0 14px, var(--ink) 14px 28px);
+}
+.placa__cifra {
+  font-family: var(--f-data); font-weight: 600;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  color: var(--risk); letter-spacing: -.02em;
+}
+.placa__texto { margin-top: .5rem; font-size: .98rem; }
+.placa__fuente {
+  margin-top: .9rem; font-family: var(--f-data);
+  font-size: .78rem; color: var(--steel); letter-spacing: .03em;
+}
+
+/* ── 3. El agujero del convenio ── */
+.agujero { background: var(--ink); color: #D5DDE3; }
+.agujero__cols {
+  display: grid; gap: 2.5rem; max-width: 62rem; margin: 0 auto;
+  grid-template-columns: 1.6fr 1fr;
+}
+.agujero__texto p + p { margin-top: 1rem; }
+.agujero__aviso {
+  border-left: 6px solid var(--amber);
+  background: #223140; padding: 1.5rem; align-self: start;
+}
+.agujero__aviso-titulo {
+  font-family: var(--f-data); text-transform: uppercase;
+  font-size: .8rem; letter-spacing: .08em; color: var(--amber); margin-bottom: .6rem;
+}
+
+/* ── 4. Captura de lead ── */
+.captura { background: var(--paper); }
+.captura__marco {
+  max-width: 46rem; margin: 0 auto; background: #FFFFFF;
+  border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--amber);
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+.captura h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; margin-bottom: .8rem; }
+.captura__intro { color: var(--steel); margin-bottom: 1.8rem; }
+.captura__campos { display: grid; gap: 1.2rem; }
+.captura__campos label { display: block; font-weight: 600; font-size: .95rem; }
+.captura__campos input, .captura__campos select {
+  width: 100%; margin-top: .35rem; padding: .8rem .9rem;
+  font: inherit; border: 1.5px solid var(--steel); background: var(--paper);
+}
+.captura__campos input:focus-visible, .captura__campos select:focus-visible {
+  outline: 3px solid var(--amber); outline-offset: 1px; border-color: var(--ink);
+}
+.captura__legal { font-size: .8rem; color: var(--steel); margin-top: 1rem; }
+.captura__legal a { color: inherit; }
+.oculto { position: absolute; left: -9999px; }
+
+/* ── 5. Cierre financiero ── */
+.fiscal { background: #FFFFFF; border-top: 1px solid var(--line); }
+.fiscal__lista { list-style: none; padding: 0; max-width: 52rem; margin: 0 auto; display: grid; gap: 1.4rem; }
+.fiscal__lista li { display: flex; gap: 1rem; }
+.fiscal__marca { color: var(--amber); font-size: 1.3rem; line-height: 1.4; }
+.fiscal__lista p { color: var(--steel); font-size: .98rem; }
+
+/* ── 6. FAQ ── */
+.faq { background: var(--paper); max-width: 100%; }
+.faq__item {
+  max-width: 52rem; margin: 0 auto .8rem; background: #FFFFFF;
+  border: 1px solid var(--line);
+}
+.faq__item summary {
+  cursor: pointer; font-weight: 700; padding: 1.1rem 1.3rem; list-style-position: inside;
+}
+.faq__item[open] summary { border-bottom: 1px solid var(--line); background: #FCFCFA; }
+.faq__item p { padding: 1rem 1.3rem 1.3rem; color: var(--steel); }
+
+/* ── Pie ── */
+.pie {
+  background: var(--ink); color: #9AA8B3;
+  padding: 2.5rem clamp(1.25rem, 5vw, 4rem);
+  font-size: .88rem; display: grid; gap: .6rem;
+}
+.pie__fuentes { font-family: var(--f-data); font-size: .78rem; }
+.pie a { color: #C9D2D9; }
+
+/* ── Responsive y accesibilidad ── */
+@media (max-width: 760px) {
+  .agujero__cols { grid-template-columns: 1fr; }
+  .barra { flex-direction: column; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

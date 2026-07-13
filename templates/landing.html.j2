@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ seo.title }}</title>
+  <meta name="description" content="{{ seo.description }}">
+  <link rel="canonical" href="{{ seo.canonical }}">
+  <meta property="og:title" content="{{ seo.title }}">
+  <meta property="og:description" content="{{ seo.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=Public+Sans:wght@400;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilo.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for faq in faqs %}
+      {
+        "@type": "Question",
+        "name": {{ faq.pregunta | tojson }},
+        "acceptedAnswer": { "@type": "Answer", "text": {{ faq.respuesta | tojson }} }
+      }{{ "," if not loop.last }}
+      {% endfor %}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="barra">
+  <span class="barra__marca">Prevención y Acompañamiento</span>
+  <a class="barra__cta" href="#auditoria">Solicitar auditoría gratuita</a>
+</header>
+
+<!-- ══ 1. HERO ══ -->
+<section class="hero">
+  <p class="hero__eyebrow">Convenio de {{ sector.nombre }} · Provincia de {{ provincia.nombre }}</p>
+  <h1>{{ hero.h1 }}</h1>
+  <p class="hero__dolor">{{ hero.subtitulo }}</p>
+  <div class="hero__acciones">
+    <a class="btn btn--primario" href="#auditoria">Solicitar auditoría de convenio gratuita</a>
+    <span class="hero__nota">Sin compromiso · Respuesta en 48&nbsp;h laborables</span>
+  </div>
+</section>
+
+<!-- ══ 2. BLOQUE ESTADÍSTICO ══ -->
+<section class="placas">
+  <h2 class="seccion__titulo">El riesgo en {{ sector.nombre | lower }} en {{ provincia.nombre }}, en cifras oficiales</h2>
+  <div class="placas__grid">
+    {% for dato in estadisticas %}
+    <article class="placa">
+      <div class="placa__banda" aria-hidden="true"></div>
+      <p class="placa__cifra">{{ dato.cifra }}</p>
+      <p class="placa__texto">{{ dato.texto }}</p>
+      <p class="placa__fuente">[{{ dato.fuente }}]</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ══ 3. EL AGUJERO DEL CONVENIO ══ -->
+<section class="agujero">
+  <h2 class="seccion__titulo seccion__titulo--claro">{{ agujero.titulo }}</h2>
+  <div class="agujero__cols">
+    <div class="agujero__texto">
+      {% for parrafo in agujero.parrafos %}
+      <p>{{ parrafo }}</p>
+      {% endfor %}
+    </div>
+    <aside class="agujero__aviso">
+      <p class="agujero__aviso-titulo">Responsabilidad del administrador</p>
+      <p>{{ agujero.aviso }}</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ══ 4. LEAD MAGNET ══ -->
+<section class="captura" id="auditoria">
+  <div class="captura__marco">
+    <h2>Auditoría de Convenio y Mapa de Riesgo — gratuita</h2>
+    <p class="captura__intro">Comprobamos si los capitales asegurados de su póliza cubren lo que exige su convenio colectivo vigente. Recibirá un informe claro con el desfase detectado, si lo hay.</p>
+    <form name="auditoria-{{ slug }}" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="auditoria-{{ slug }}">
+      <input type="hidden" name="landing" value="{{ slug }}">
+      <p class="oculto"><label>No rellenar: <input name="bot-field"></label></p>
+      <div class="captura__campos">
+        <label>Email de empresa
+          <input type="email" name="email" required placeholder="nombre@suempresa.es" autocomplete="email">
+        </label>
+        <label>Actividad (CNAE o descripción)
+          <input type="text" name="cnae" required placeholder="Ej.: 4121 — Construcción de edificios">
+        </label>
+        <label>Nº de empleados
+          <select name="empleados" required>
+            <option value="" disabled selected>Seleccionar</option>
+            <option>1–9</option>
+            <option>10–49</option>
+            <option>50–249</option>
+            <option>250 o más</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn btn--primario btn--ancho" type="submit">Solicitar mi auditoría gratuita</button>
+      <p class="captura__legal">Al enviar, acepta que le contactemos para entregarle la auditoría. Sus datos no se ceden a terceros. <a href="/privacidad/">Política de privacidad</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ══ 5. CIERRE FINANCIERO ══ -->
+<section class="fiscal">
+  <h2 class="seccion__titulo">El argumento que su dirección financiera querrá oír</h2>
+  <ul class="fiscal__lista">
+    {% for punto in fiscal %}
+    <li>
+      <span class="fiscal__marca" aria-hidden="true">▸</span>
+      <div><strong>{{ punto.titulo }}</strong><p>{{ punto.texto }}</p></div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- ══ 6. FAQ ══ -->
+<section class="faq">
+  <h2 class="seccion__titulo">Preguntas frecuentes</h2>
+  {% for faq in faqs %}
+  <details class="faq__item">
+    <summary>{{ faq.pregunta }}</summary>
+    <p>{{ faq.respuesta }}</p>
+  </details>
+  {% endfor %}
+</section>
+
+<footer class="pie">
+  <p>© {{ anio }} Prevención y Acompañamiento · Consultoría de blindaje legal y financiero para empresas</p>
+  <p class="pie__fuentes">Fuentes estadísticas: Ministerio de Trabajo y Economía Social (MITES) e INSST. Datos oficiales de acceso público.</p>
+  <nav><a href="/privacidad/">Privacidad</a> · <a href="/aviso-legal/">Aviso legal</a></nav>
+</footer>
+
+</body>
+</html>
