@@ -46,6 +46,7 @@ def main() -> None:
     shutil.copytree(ESTATICOS, SALIDA, dirs_exist_ok=True)
 
     generadas, omitidas = 0, 0
+    publicadas = []
     for fichero in sorted(DATOS.glob("*.json")):
         datos = json.loads(fichero.read_text(encoding="utf-8"))
 
@@ -61,7 +62,16 @@ def main() -> None:
         carpeta.mkdir(parents=True, exist_ok=True)
         (carpeta / "index.html").write_text(html, encoding="utf-8")
         print(f"  GENERADA {datos['slug']}/index.html")
+        publicadas.append(datos)
         generadas += 1
+
+    # ── Página raíz: índice de todas las landings publicadas ──
+    publicadas.sort(key=lambda d: (d["sector"]["nombre"], d["provincia"]["nombre"]))
+    home = env.get_template("home.html.j2").render(
+        landings=publicadas, anio=date.today().year
+    )
+    (SALIDA / "index.html").write_text(home, encoding="utf-8")
+    print(f"  GENERADA index.html (home con {len(publicadas)} landings)")
 
     print(f"\nResumen: {generadas} generadas, {omitidas} omitidas → {SALIDA}")
 
