@@ -1,0 +1,83 @@
+{
+  "slug": "seguro-convenio-construccion-castellon",
+  "verificado": true,
+  "sector": {
+    "nombre": "Construcción",
+    "cnae": "41-43"
+  },
+  "provincia": {
+    "nombre": "Castellón"
+  },
+  "seo": {
+    "title": "Seguro de Convenio Construcción Castellón | Auditoría gratuita de capitales",
+    "description": "¿Cubre su póliza lo que exige el convenio de la construcción de Castellón? Auditoría gratuita de capitales asegurados. Evite indemnizaciones a cargo de la empresa.",
+    "canonical": "https://EJEMPLO-PENDIENTE-DOMINIO.es/seguro-convenio-construccion-castellon/"
+  },
+  "hero": {
+    "h1": "Seguro de Convenio de la Construcción en Castellón: si su póliza está desfasada, la diferencia la paga su empresa",
+    "subtitulo": "El convenio colectivo actualiza los capitales por fallecimiento e invalidez. Si su póliza no se ha revisado a la vez, el desfase sale del patrimonio de la empresa — y puede alcanzar al administrador."
+  },
+  "estadisticas": [
+    {
+      "cifra": "1.235",
+      "texto": "accidentes de trabajo con baja en jornada registrados en el sector de la construcción en la provincia de Castellón en 2025, un 15,9% más que el año anterior: el sector con mayor aumento de siniestralidad de la provincia.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "6.423",
+      "texto": "accidentes con baja por cada 100.000 trabajadores en la construcción de Castellón: el índice de incidencia del sector más alto de las tres provincias de la Comunitat, y el doble de la media provincial (3.180).",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "37,5%",
+      "texto": "de los accidentes laborales mortales de la provincia de Castellón en 2025 fueron patologías no traumáticas: infartos y derrames cerebrales. El convenio también obliga a indemnizar estas contingencias, aunque no ocurran en la obra.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    }
+  ],
+  "agujero": {
+    "titulo": "El agujero del convenio: por qué una póliza de hace tres años ya no le protege",
+    "parrafos": [
+      "El convenio colectivo de la construcción obliga a la empresa a garantizar indemnizaciones por fallecimiento, invalidez permanente y otras contingencias de sus trabajadores. Esas cuantías se revisan periódicamente en cada actualización del convenio.",
+      "El problema: la póliza que contrató en su día no se actualiza sola. Si el convenio hoy exige un capital superior al asegurado, la aseguradora paga hasta el límite de la póliza y el resto lo abona la empresa con su propio patrimonio.",
+      "En caso de siniestro grave, ese desfase puede suponer decenas de miles de euros por trabajador afectado, exigibles judicialmente por el trabajador o sus herederos."
+    ],
+    "aviso": "Si el impago deriva de una falta de aseguramiento obligatorio, la responsabilidad puede extenderse personalmente al administrador de la sociedad. No es una hipótesis teórica: existe jurisprudencia consolidada al respecto."
+  },
+  "fiscal": [
+    {
+      "titulo": "Prima 100 % deducible en el Impuesto de Sociedades",
+      "texto": "El seguro colectivo exigido por convenio es un gasto de personal obligatorio: reduce la base imponible en su totalidad."
+    },
+    {
+      "titulo": "No es retribución en especie con coste fiscal para el trabajador",
+      "texto": "Al tratarse de una obligación de convenio, su tratamiento fiscal es distinto al de un beneficio voluntario. Se lo detallamos en la auditoría."
+    },
+    {
+      "titulo": "Coste previsible frente a contingencia imprevisible",
+      "texto": "Una prima anual cerrada frente a indemnizaciones potenciales de seis cifras: la asimetría que cualquier dirección financiera entiende."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Es obligatorio el seguro de convenio en la construcción?",
+      "respuesta": "Sí. El convenio colectivo del sector obliga a la empresa a garantizar determinadas indemnizaciones. Contratar la póliza es la forma habitual de cubrir esa obligación; no tenerla al día no elimina la deuda, solo la traslada al patrimonio de la empresa."
+    },
+    {
+      "pregunta": "¿Qué revisa la Inspección de Trabajo respecto al seguro de convenio?",
+      "respuesta": "En sus actuaciones puede requerir la póliza y comprobar que los capitales asegurados alcanzan los exigidos por el convenio vigente y que están cubiertos todos los trabajadores de alta."
+    },
+    {
+      "pregunta": "Ya tengo una póliza contratada. ¿Por qué necesitaría una auditoría?",
+      "respuesta": "Porque el riesgo no está en no tener póliza, sino en tenerla desfasada: convenios que suben capitales, plantillas que crecen o categorías mal encuadradas. La auditoría compara su póliza actual con el texto vigente del convenio, sin coste."
+    },
+    {
+      "pregunta": "¿La auditoría gratuita me compromete a contratar?",
+      "respuesta": "No. Entregamos el informe con el desfase detectado, si existe, y usted decide. Nuestro trabajo es que la decisión la tome con los números delante."
+    }
+  ],
+  "fuente_principal": {
+    "titulo": "INVASSAT — Estadísticas de accidentes de trabajo en la Comunitat Valenciana. Informe anual 2025 (EA03-260102)",
+    "nota": "Datos provisionales enero-diciembre 2025, sistema Delt@ (Ministerio de Trabajo y Economía Social). Publicado en enero de 2026.",
+    "url": "https://invassat.gva.es/es/accidentes-de-trabajo"
+  }
+}
