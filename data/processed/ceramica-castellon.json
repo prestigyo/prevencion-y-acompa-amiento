@@ -1,0 +1,87 @@
+{
+  "slug": "seguro-convenio-ceramica-castellon",
+  "verificado": true,
+  "sector": {
+    "nombre": "Cerámica y azulejo",
+    "cnae": "23"
+  },
+  "provincia": {
+    "nombre": "Castellón"
+  },
+  "seo": {
+    "title": "Seguro de Convenio Cerámica Castellón | Auditoría gratuita de capitales",
+    "description": "El convenio de la cerámica de Castellón y el estatal del vidrio y la cerámica obligan a pólizas con capital revisado cada año en el BOE. Auditoría gratuita del desfase de su póliza.",
+    "canonical": "https://EJEMPLO-PENDIENTE-DOMINIO.es/seguro-convenio-ceramica-castellon/"
+  },
+  "hero": {
+    "h1": "Seguro de Convenio de la Cerámica en Castellón: el capital se revisa cada año en el BOE, su póliza no",
+    "subtitulo": "El convenio provincial del azulejo y el estatal del vidrio y la cerámica obligan a pólizas de muerte e incapacidad cuyo capital se actualiza anualmente por publicación oficial. Una póliza de capital fijo queda desfasada cada enero — y el desfase lo paga la empresa. Antes incluso hay que acertar con el convenio correcto."
+  },
+  "estadisticas": [
+    {
+      "cifra": "960",
+      "texto": "accidentes de trabajo con baja en jornada registrados en la fabricación de productos cerámicos y minerales no metálicos (CNAE división 23) en la provincia de Castellón en 2025: el 11,99% de todos los accidentes laborales de la provincia concentrados en una sola división industrial.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "69,6%",
+      "texto": "de todos los accidentes de la división cerámica (CNAE 23) de la Comunitat Valenciana se concentran en Castellón: 960 de los 1.380 casos de las tres provincias. La siniestralidad del azulejo es, esencialmente, un fenómeno castellonense.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "1 de cada 4",
+      "texto": "muertes laborales en jornada de la provincia de Castellón en 2025 se produjo en la división cerámica: 2 de los 8 fallecimientos (el 25%), pese a tratarse de una sola división industrial. La industria manufacturera fue el sector con mayor peso de la mortalidad laboral provincial.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    }
+  ],
+  "agujero": {
+    "titulo": "El agujero del convenio: un capital que sube cada enero en el BOE y una póliza que no lo persigue",
+    "parrafos": [
+      "El convenio provincial de Industrias de Azulejos, Pavimentos y Baldosas Cerámicas de Castellón (art. 64) obliga a pólizas que cubren la muerte por accidente laboral, no laboral y natural, además de las incapacidades permanentes en diversos grados por accidente de trabajo o enfermedad profesional. El convenio estatal del vidrio y la cerámica (art. 24) añade la obligación de una póliza de accidentes de trabajo que incluye los ocurridos in itinere.",
+      "El problema: ese capital estatal se revisa cada año en el BOE (la revisión de 2025 lo fijó en 29.859,54 €, BOE-A-2025-5817, cifra de referencia sujeta a actualización). Una póliza de capital fijo queda desfasada cada enero por publicación oficial, sin que la empresa haga nada.",
+      "Si el convenio hoy exige un capital superior al asegurado, la aseguradora paga hasta el límite de la póliza y el resto lo abona la empresa con su propio patrimonio. Y antes incluso de mirar cifras hay que acertar con el convenio aplicable: algunas grandes empresas del azulejo tienen convenio propio y quedan fuera del provincial. Identificar el marco correcto ya es parte del trabajo."
+    ],
+    "aviso": "Si el impago deriva de una falta de aseguramiento obligatorio, la responsabilidad puede extenderse personalmente al administrador de la sociedad. No es una hipótesis teórica: existe jurisprudencia consolidada al respecto."
+  },
+  "fiscal": [
+    {
+      "titulo": "Prima 100 % deducible en el Impuesto de Sociedades",
+      "texto": "El seguro colectivo exigido por convenio es un gasto de personal obligatorio: reduce la base imponible en su totalidad."
+    },
+    {
+      "titulo": "No es retribución en especie con coste fiscal para el trabajador",
+      "texto": "Al tratarse de una obligación de convenio, su tratamiento fiscal es distinto al de un beneficio voluntario. Se lo detallamos en la auditoría."
+    },
+    {
+      "titulo": "Coste previsible frente a contingencia imprevisible",
+      "texto": "Una prima anual cerrada frente a indemnizaciones potenciales de seis cifras: la asimetría que cualquier dirección financiera entiende."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Es obligatorio el seguro de convenio en la cerámica y el azulejo?",
+      "respuesta": "Sí. El convenio provincial de la cerámica de Castellón y el estatal del vidrio y la cerámica obligan a la empresa a garantizar determinadas indemnizaciones por muerte e incapacidad. Contratar la póliza es la forma habitual de cubrir esa obligación; no tenerla al día no elimina la deuda, solo la traslada al patrimonio de la empresa."
+    },
+    {
+      "pregunta": "¿Qué revisa la Inspección de Trabajo respecto al seguro de convenio de la cerámica?",
+      "respuesta": "En sus actuaciones puede requerir la póliza y comprobar que los capitales asegurados alcanzan los exigidos por el convenio vigente —incluida la última revisión publicada en el BOE— y que están cubiertos todos los trabajadores de alta."
+    },
+    {
+      "pregunta": "Ya tengo una póliza contratada. ¿Por qué necesitaría una auditoría?",
+      "respuesta": "Porque el riesgo no está en no tener póliza, sino en tenerla desfasada: el capital del convenio de la cerámica se revisa cada año en el BOE, y una póliza de capital fijo se queda corta por diseño. La auditoría compara su póliza actual con el texto vigente del convenio, sin coste."
+    },
+    {
+      "pregunta": "¿La auditoría gratuita me compromete a contratar?",
+      "respuesta": "No. Entregamos el informe con el desfase detectado, si existe, y usted decide. Nuestro trabajo es que la decisión la tome con los números delante."
+    },
+    {
+      "pregunta": "¿Cómo sé qué convenio de la cerámica se aplica a mi empresa?",
+      "respuesta": "Es la primera pregunta, y no siempre es obvia. La mayoría de fabricantes de azulejo de Castellón se rigen por el convenio provincial y, de forma complementaria, por el estatal del vidrio y la cerámica; pero algunas grandes empresas tienen convenio propio y quedan excluidas del provincial. Identificar el marco correcto forma parte de la auditoría: el capital exigible depende de ello, y las cifras publicadas son de referencia, sujetas a la revisión anual del BOE."
+    }
+  ],
+  "fuente_principal": {
+    "titulo": "INVASSAT — Estadísticas de accidentes de trabajo en la Comunitat Valenciana. Informe anual 2025 (EA03-260102)",
+    "nota": "Datos provisionales enero-diciembre 2025, sistema Delt@ (Ministerio de Trabajo y Economía Social). Publicado en enero de 2026.",
+    "url": "https://invassat.gva.es/es/accidentes-de-trabajo"
+  }
+}

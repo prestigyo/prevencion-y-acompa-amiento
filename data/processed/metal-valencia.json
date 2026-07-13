@@ -1,0 +1,87 @@
+{
+  "slug": "seguro-convenio-metal-valencia",
+  "verificado": true,
+  "sector": {
+    "nombre": "Metal",
+    "cnae": "24-25, 28-33 (industria) y comercio del metal"
+  },
+  "provincia": {
+    "nombre": "Valencia"
+  },
+  "seo": {
+    "title": "Seguro de Convenio Metal Valencia | Auditoría gratuita de capitales",
+    "description": "El convenio del metal de Valencia obliga a un seguro que cubre muerte e invalidez por cualquier causa, con capitales que suben cada año. Auditoría gratuita del desfase de su póliza.",
+    "canonical": "https://EJEMPLO-PENDIENTE-DOMINIO.es/seguro-convenio-metal-valencia/"
+  },
+  "hero": {
+    "h1": "Seguro de Convenio del Metal en Valencia: cubre la muerte y la invalidez por cualquier causa, y el capital sube cada año",
+    "subtitulo": "El convenio del metal de Valencia no obliga a un seguro de accidentes: obliga a un seguro de vida que responde ante cualquier causa. Y en el comercio del metal el capital asegurado crece cada año de vigencia. Si su póliza no se revisa al mismo ritmo, el desfase lo paga la empresa — y puede alcanzar al administrador."
+  },
+  "estadisticas": [
+    {
+      "cifra": "5.935",
+      "texto": "accidentes de trabajo con baja en jornada registrados en la industria manufacturera de la provincia de Valencia en 2025 —aproximación al sector del metal (CNAE 24-33)—, el 20% del total de accidentes de la provincia. Solo la fabricación de productos metálicos (división 25) sumó 912 casos.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "48",
+      "texto": "accidentes graves en jornada en la industria manufacturera de Valencia en 2025: el 20,2% de los graves de la provincia y el segundo sector con más accidentes graves, solo por detrás de la construcción. Los accidentes graves son la antesala de la incapacidad permanente que el convenio obliga a indemnizar.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "54,2%",
+      "texto": "de los 48 accidentes laborales mortales en jornada de la provincia de Valencia en 2025 fueron patologías no traumáticas: infartos y derrames cerebrales. El convenio del metal obliga a indemnizar la muerte y la gran invalidez por cualquier causa, no solo por accidente de trabajo.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    }
+  ],
+  "agujero": {
+    "titulo": "El agujero del convenio: un seguro de vida que sube cada año y que su póliza no persigue sola",
+    "parrafos": [
+      "El convenio de la Industria del Metal de Valencia (art. 84) y el del Comercio del Metal (art. 54) obligan a la empresa a garantizar indemnizaciones por muerte, incapacidad permanente absoluta y gran invalidez. La comisión paritaria aclaró expresamente que la cobertura deriva de cualquier causa: es un seguro de vida, no un simple seguro de accidentes laborales.",
+      "En el comercio del metal, además, el capital asegurado se revaloriza cada año de vigencia del convenio (cifras de referencia: 19.061 € en 2023, 20.145 € en 2024 y 21.465 € en 2025, sujetas a revisión). El desfase está institucionalizado por diseño: una póliza no revisada anualmente se queda corta sola.",
+      "Si el convenio hoy exige un capital superior al asegurado, la aseguradora paga hasta el límite de la póliza y el resto lo abona la empresa con su propio patrimonio. En un fallecimiento o una gran invalidez, ese desfase alcanza decenas de miles de euros, exigibles judicialmente por el trabajador o sus herederos. El incumplimiento del aseguramiento obligatorio constituye, además, infracción muy grave en materia laboral."
+    ],
+    "aviso": "Si el impago deriva de una falta de aseguramiento obligatorio, la responsabilidad puede extenderse personalmente al administrador de la sociedad. No es una hipótesis teórica: existe jurisprudencia consolidada al respecto."
+  },
+  "fiscal": [
+    {
+      "titulo": "Prima 100 % deducible en el Impuesto de Sociedades",
+      "texto": "El seguro colectivo exigido por convenio es un gasto de personal obligatorio: reduce la base imponible en su totalidad."
+    },
+    {
+      "titulo": "No es retribución en especie con coste fiscal para el trabajador",
+      "texto": "Al tratarse de una obligación de convenio, su tratamiento fiscal es distinto al de un beneficio voluntario. Se lo detallamos en la auditoría."
+    },
+    {
+      "titulo": "Coste previsible frente a contingencia imprevisible",
+      "texto": "Una prima anual cerrada frente a indemnizaciones potenciales de seis cifras: la asimetría que cualquier dirección financiera entiende."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Es obligatorio el seguro de convenio en el metal?",
+      "respuesta": "Sí. Los convenios de la Industria del Metal y del Comercio del Metal de Valencia obligan a la empresa a garantizar indemnizaciones por muerte, incapacidad permanente absoluta y gran invalidez. Contratar la póliza es la forma habitual de cubrir esa obligación; no tenerla al día no elimina la deuda, solo la traslada al patrimonio de la empresa."
+    },
+    {
+      "pregunta": "¿Qué revisa la Inspección de Trabajo respecto al seguro de convenio del metal?",
+      "respuesta": "En sus actuaciones puede requerir la póliza y comprobar que los capitales asegurados alcanzan los exigidos por el convenio vigente y que están cubiertos todos los trabajadores de alta. El incumplimiento del aseguramiento obligatorio está tipificado como infracción muy grave en materia laboral."
+    },
+    {
+      "pregunta": "Ya tengo una póliza contratada. ¿Por qué necesitaría una auditoría?",
+      "respuesta": "Porque el riesgo no está en no tener póliza, sino en tenerla desfasada: en el comercio del metal el capital sube cada año de vigencia del convenio, y una póliza de capital fijo se queda corta por diseño. La auditoría compara su póliza actual con el texto vigente del convenio, sin coste."
+    },
+    {
+      "pregunta": "¿La auditoría gratuita me compromete a contratar?",
+      "respuesta": "No. Entregamos el informe con el desfase detectado, si existe, y usted decide. Nuestro trabajo es que la decisión la tome con los números delante."
+    },
+    {
+      "pregunta": "El convenio del metal, ¿solo cubre accidentes ocurridos en el taller?",
+      "respuesta": "No. La comisión paritaria del metal de Valencia aclaró que la cobertura de muerte, incapacidad permanente absoluta y gran invalidez deriva de cualquier causa. Un infarto en casa un domingo también genera la indemnización: es un seguro de vida, no solo de accidente laboral. Por eso el dato es relevante — más de la mitad de las muertes laborales de la provincia son patologías no traumáticas. Las cuantías son cifras de referencia del convenio, sujetas a revisión; el cálculo exacto vigente se lo damos en la auditoría."
+    }
+  ],
+  "fuente_principal": {
+    "titulo": "INVASSAT — Estadísticas de accidentes de trabajo en la Comunitat Valenciana. Informe anual 2025 (EA03-260102)",
+    "nota": "Datos provisionales enero-diciembre 2025, sistema Delt@ (Ministerio de Trabajo y Economía Social). Publicado en enero de 2026.",
+    "url": "https://invassat.gva.es/es/accidentes-de-trabajo"
+  }
+}

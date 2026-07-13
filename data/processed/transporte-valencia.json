@@ -1,0 +1,87 @@
+{
+  "slug": "seguro-convenio-transporte-valencia",
+  "verificado": true,
+  "sector": {
+    "nombre": "Transporte de mercancías",
+    "cnae": "49-53"
+  },
+  "provincia": {
+    "nombre": "Valencia"
+  },
+  "seo": {
+    "title": "Seguro de Convenio Transporte Valencia | Auditoría gratuita de capitales",
+    "description": "El convenio del transporte de mercancías de Valencia obliga a un seguro por muerte e incapacidad. Con las cuantías aún vivas en negociación, la auditoría gratuita revisa el desfase de su póliza.",
+    "canonical": "https://EJEMPLO-PENDIENTE-DOMINIO.es/seguro-convenio-transporte-valencia/"
+  },
+  "hero": {
+    "h1": "Seguro de Convenio del Transporte en Valencia: el segundo sector con más muertes laborales, y las cuantías siguen vivas en negociación",
+    "subtitulo": "El convenio del transporte de mercancías de Valencia obliga a garantizar indemnizaciones por muerte e incapacidad. Las cuantías se están renegociando y las flotas son pequeñas: es fácil que la póliza quede por debajo de lo exigido. Ese desfase lo paga la empresa — y puede alcanzar al administrador."
+  },
+  "estadisticas": [
+    {
+      "cifra": "2.525",
+      "texto": "accidentes de trabajo con baja en jornada registrados en el transporte y almacenamiento de la provincia de Valencia en 2025, el 8,5% del total de accidentes de la provincia. Solo el transporte terrestre por carretera (división 49) concentró 1.470 de esos casos.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "12",
+      "texto": "accidentes mortales en jornada en el transporte y almacenamiento de la provincia de Valencia en 2025: el 25% de todas las muertes laborales de la provincia y el segundo sector con más fallecidos, solo por detrás de la construcción.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    },
+    {
+      "cifra": "9",
+      "texto": "de esas muertes se produjeron en el transporte terrestre por carretera (división 49): tres de cada cuatro fallecidos del sector en Valencia. El riesgo se concentra al volante, donde el accidente de tráfico y el desplazamiento son parte de la jornada.",
+      "fuente": "INVASSAT, Informe anual 2025 de accidentes de trabajo (datos provisionales Delt@, Ministerio de Trabajo)"
+    }
+  ],
+  "agujero": {
+    "titulo": "El agujero del convenio: cuantías en movimiento y flotas pequeñas que revisan la póliza tarde",
+    "parrafos": [
+      "El convenio sectorial del Transporte de Mercancías por Carretera, Logística y Mensajerías de la provincia de Valencia 2023-2026, firmado por FVET, UGT y CCOO, obliga a la empresa a garantizar indemnizaciones por muerte e incapacidad permanente de sus trabajadores. Las últimas cifras de referencia publicadas rondan los 43.118 € por incapacidad permanente y 30.799 € por muerte, cifras sujetas a revisión.",
+      "El problema: la comisión negociadora sigue activa (actas de 2024 y de julio de 2025) y las cuantías están vivas. La póliza que contrató en su día no se actualiza sola, y en un sector atomizado en flotas pequeñas es fácil que la revisión llegue tarde o no llegue.",
+      "Si el convenio hoy exige un capital superior al asegurado, la aseguradora paga hasta el límite de la póliza y el resto lo abona la empresa con su propio patrimonio. En un fallecimiento o una incapacidad permanente, ese desfase alcanza decenas de miles de euros, exigibles judicialmente por el trabajador o sus herederos."
+    ],
+    "aviso": "Si el impago deriva de una falta de aseguramiento obligatorio, la responsabilidad puede extenderse personalmente al administrador de la sociedad. No es una hipótesis teórica: existe jurisprudencia consolidada al respecto."
+  },
+  "fiscal": [
+    {
+      "titulo": "Prima 100 % deducible en el Impuesto de Sociedades",
+      "texto": "El seguro colectivo exigido por convenio es un gasto de personal obligatorio: reduce la base imponible en su totalidad."
+    },
+    {
+      "titulo": "No es retribución en especie con coste fiscal para el trabajador",
+      "texto": "Al tratarse de una obligación de convenio, su tratamiento fiscal es distinto al de un beneficio voluntario. Se lo detallamos en la auditoría."
+    },
+    {
+      "titulo": "Coste previsible frente a contingencia imprevisible",
+      "texto": "Una prima anual cerrada frente a indemnizaciones potenciales de seis cifras: la asimetría que cualquier dirección financiera entiende."
+    }
+  ],
+  "faqs": [
+    {
+      "pregunta": "¿Es obligatorio el seguro de convenio en el transporte de mercancías?",
+      "respuesta": "Sí. El convenio del transporte de mercancías por carretera de Valencia obliga a la empresa a garantizar determinadas indemnizaciones por muerte e incapacidad. Contratar la póliza es la forma habitual de cubrir esa obligación; no tenerla al día no elimina la deuda, solo la traslada al patrimonio de la empresa."
+    },
+    {
+      "pregunta": "¿Qué revisa la Inspección de Trabajo respecto al seguro de convenio del transporte?",
+      "respuesta": "En sus actuaciones puede requerir la póliza y comprobar que los capitales asegurados alcanzan los exigidos por el convenio vigente y que están cubiertos todos los trabajadores de alta, incluidos los conductores."
+    },
+    {
+      "pregunta": "Ya tengo una póliza contratada. ¿Por qué necesitaría una auditoría?",
+      "respuesta": "Porque el riesgo no está en no tener póliza, sino en tenerla desfasada: en el transporte las cuantías siguen en negociación y una póliza sin revisar puede quedar por debajo de lo exigido. La auditoría compara su póliza actual con el texto vigente del convenio, sin coste."
+    },
+    {
+      "pregunta": "¿La auditoría gratuita me compromete a contratar?",
+      "respuesta": "No. Entregamos el informe con el desfase detectado, si existe, y usted decide. Nuestro trabajo es que la decisión la tome con los números delante."
+    },
+    {
+      "pregunta": "Mis conductores pasan el día en la carretera. ¿Los accidentes al volante y los de ida y vuelta al trabajo cuentan?",
+      "respuesta": "Es precisamente el núcleo del riesgo del sector: en 2025, tres de cada cuatro muertes laborales del transporte en Valencia se produjeron en el transporte terrestre por carretera, y los desplazamientos in itinere suman siniestralidad adicional. En un sector atomizado en flotas pequeñas, revisar que la póliza cubre a todos los conductores por las cuantías vigentes del convenio es exactamente lo que hace la auditoría. Las cifras son de referencia, sujetas a la negociación en curso."
+    }
+  ],
+  "fuente_principal": {
+    "titulo": "INVASSAT — Estadísticas de accidentes de trabajo en la Comunitat Valenciana. Informe anual 2025 (EA03-260102)",
+    "nota": "Datos provisionales enero-diciembre 2025, sistema Delt@ (Ministerio de Trabajo y Economía Social). Publicado en enero de 2026.",
+    "url": "https://invassat.gva.es/es/accidentes-de-trabajo"
+  }
+}
