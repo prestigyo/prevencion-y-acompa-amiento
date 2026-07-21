@@ -1,0 +1,27 @@
+---
+/**
+ * Tarjeta de enlace pilar→hija. Si la hija no está publicada, se renderiza
+ * como "próximamente" SIN etiqueta <a>, para no enlazar a un 404.
+ */
+const { h2, parrafos = [], enlace } = Astro.props;
+const publicada = enlace && enlace.publicada && enlace.url && enlace.url !== '#proximamente';
+---
+<section class={`tc ${publicada ? '' : 'tc-soon'}`}>
+  <h2>{h2}</h2>
+  {parrafos.map((p) => <p>{p}</p>)}
+  {enlace && (
+    publicada ? (
+      <a class="tc-link" href={enlace.url}>{enlace.texto} →</a>
+    ) : (
+      <span class="tc-soon-tag">Próximamente</span>
+    )
+  )}
+</section>
+
+<style>
+  .tc { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 8px; max-width: 68ch; }
+  .tc p { color: var(--ink); }
+  .tc-link { display: inline-block; margin-top: 6px; font-weight: 650; text-decoration: none; }
+  .tc-link:hover { text-decoration: underline; }
+  .tc-soon-tag { display: inline-block; margin-top: 6px; font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted2); background: var(--panel); border-radius: 999px; padding: 4px 12px; }
+</style>

@@ -1,0 +1,31 @@
+---
+/**
+ * "La oportunidad fiscal": ventajas exactas extraídas de la documentación del producto.
+ */
+const { titulo, intro, ventajas = [] } = Astro.props;
+---
+<section class="fiscal card" aria-labelledby="oportunidad-fiscal">
+  <h2 id="oportunidad-fiscal">{titulo}</h2>
+  {intro && <p class="lede" style="margin-top:0">{intro}</p>}
+  <ol class="vlist">
+    {ventajas.map((v, i) => (
+      <li>
+        <span class="vnum">{i + 1}</span>
+        <div>
+          <h3>{v.titulo}</h3>
+          <p>{v.texto}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .fiscal { margin: 30px 0; }
+  .vlist { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 16px; }
+  .vlist li { display: flex; gap: 14px; align-items: flex-start; border-top: 1px solid var(--line); padding-top: 16px; }
+  .vlist li:first-child { border-top: 0; padding-top: 0; }
+  .vnum { flex: none; width: 30px; height: 30px; border-radius: 999px; background: var(--brand); color: var(--brand-ink); font-weight: 800; display: grid; place-items: center; }
+  .vlist h3 { margin: 0 0 4px; }
+  .vlist p { margin: 0; color: var(--muted); }
+</style>

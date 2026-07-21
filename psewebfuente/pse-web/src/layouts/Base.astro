@@ -1,0 +1,147 @@
+---
+/**
+ * Layout base: cabecera SEO completa, CSS crítico global y esqueleto de página.
+ * Recibe los metadatos por props (desde el JSON de cada página) y una lista
+ * opcional de bloques JSON-LD que se inyectan como <script type="application/ld+json">.
+ */
+const {
+  title,
+  description,
+  canonicalPath = '/',
+  ogTitle,
+  ogDescription,
+  jsonld = [],
+  robots = 'index,follow,max-image-preview:large',
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://PENDIENTE-DOMINIO.es');
+const canonical = new URL(canonicalPath, site).href;
+const ogImage = new URL('/og.png', site).href;
+---
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta name="robots" content={robots} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content={ogTitle ?? title} />
+  <meta property="og:description" content={ogDescription ?? description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+  {jsonld.map((bloque) => (
+    <script type="application/ld+json" set:html={JSON.stringify(bloque)} />
+  ))}
+
+  {/* Analítica opcional sin cookies (Plausible/GA4): si se decide añadirla, inserte
+      aquí su etiqueta de script. Se deja fuera a propósito para mantener el RGPD limpio. */}
+
+  <style is:global>
+    :root {
+      --bg: #f6f4ef; --surface: #ffffff; --panel: #f0ece3;
+      --ink: #16202a; --muted: #55636f; --muted2: #8794a1;
+      --line: #e2ddd2; --brand: #0d6e63; --brand-d: #0a544c; --brand-ink: #ffffff;
+      --accent: #d97a3c; --ok-bg: #e6f3f1;
+      --shadow: 0 1px 2px rgba(22,32,42,.06), 0 10px 30px rgba(22,32,42,.08);
+      --maxw: 1080px; --r: 14px;
+      --font: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1519; --surface: #17212a; --panel: #1c2831;
+        --ink: #eef2f5; --muted: #a7b4bf; --muted2: #7d8b97;
+        --line: #2a3742; --brand: #2bb5a4; --brand-d: #1f9384; --brand-ink: #06120f;
+        --accent: #ee9a5e; --ok-bg: #12302a;
+        --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 34px rgba(0,0,0,.4);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font-family: var(--font); line-height: 1.6; font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .in { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+    a { color: var(--brand); }
+    h1, h2, h3 { font-family: var(--serif); line-height: 1.2; letter-spacing: -.01em; }
+    h1 { font-size: clamp(28px, 4.4vw, 42px); margin: 0; }
+    h2 { font-size: clamp(22px, 3vw, 30px); margin: 2.2em 0 .5em; }
+    h3 { font-size: 20px; margin: 1.6em 0 .4em; }
+    p { margin: 0 0 1em; }
+
+    .site-head { border-bottom: 1px solid var(--line); background: var(--surface); position: sticky; top: 0; z-index: 20; }
+    .site-head .in { display: flex; align-items: center; gap: 14px; height: 62px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-family: var(--serif); font-weight: 700; font-size: 18px; color: var(--ink); text-decoration: none; }
+    .logo .mk { width: 30px; height: 30px; border-radius: 8px; background: var(--brand); color: var(--brand-ink); display: grid; place-items: center; font-weight: 800; }
+    .site-head nav { margin-left: auto; display: flex; gap: 4px; }
+    .site-head nav a { font-size: 14.5px; color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 8px; }
+    .site-head nav a:hover { color: var(--ink); background: var(--panel); }
+
+    .crumbs { font-size: 13.5px; color: var(--muted); padding: 16px 0 0; }
+    .crumbs a { color: var(--muted); text-decoration: none; }
+    .crumbs a:hover { color: var(--brand); }
+    .crumbs span { color: var(--muted2); margin: 0 6px; }
+
+    .hero { padding: 34px 0 10px; }
+    .kicker { font-size: 12.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; }
+    .lede { font-size: clamp(16.5px, 2vw, 19px); color: var(--muted); max-width: 62ch; margin: 16px 0 0; }
+    .prose { max-width: 68ch; }
+    .prose p, .prose li { color: var(--ink); }
+
+    .btn { display: inline-block; background: var(--brand); color: var(--brand-ink); border: 0; border-radius: 11px; font-weight: 700; font-size: 16px; padding: 13px 22px; cursor: pointer; text-decoration: none; }
+    .btn:hover { background: var(--brand-d); }
+    .btn.ghost { background: transparent; color: var(--brand); border: 1.5px solid var(--line); }
+    .btn.ghost:hover { border-color: var(--brand); }
+
+    .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); box-shadow: var(--shadow); padding: 24px 22px; }
+
+    .cta-band { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 26px 24px; margin: 34px 0; }
+    .cta-band h2, .cta-band h3 { margin-top: 0; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    @media (max-width: 760px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+
+    .tag { display: inline-block; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted2); background: var(--panel); border-radius: 999px; padding: 3px 10px; }
+
+    footer.site-foot { margin-top: 48px; border-top: 1px solid var(--line); background: var(--surface); }
+    footer.site-foot .in { padding: 26px 20px; font-size: 13.5px; color: var(--muted); display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+
+    :focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  </style>
+</head>
+<body>
+  <header class="site-head">
+    <div class="in">
+      <a class="logo" href="/"><span class="mk">P</span> Previsión Social Empresarial</a>
+      <nav>
+        <a href="/prevision-social-empresarial/">Guía PSE</a>
+        <a href="/plan-pensiones-empleo-pymes/">Plan de empleo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="in">
+    <slot />
+  </main>
+
+  <footer class="site-foot">
+    <div class="in">
+      <span>© {new Date().getFullYear()} · Consultoría de previsión social empresarial</span>
+      <span>Contenido orientativo. No constituye asesoramiento fiscal vinculante.</span>
+    </div>
+  </footer>
+</body>
+</html>

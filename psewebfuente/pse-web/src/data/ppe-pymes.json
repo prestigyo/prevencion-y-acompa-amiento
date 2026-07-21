@@ -1,0 +1,102 @@
+{
+  "slug": "plan-pensiones-empleo-pymes",
+  "seo": {
+    "title": "Plan de Pensiones de Empleo para Pymes | Deducción fiscal y ahorro en Seguridad Social",
+    "description": "Cómo funciona el plan de pensiones de empleo (PPE/PPPC) para pymes: aportaciones 100% deducibles, deducción del 10% en el Impuesto de Sociedades y reducción de cotizaciones. Calcule su ahorro.",
+    "canonicalPath": "/plan-pensiones-empleo-pymes/",
+    "ogTitle": "Plan de Pensiones de Empleo para pymes: la aportación que le devuelve el impuesto",
+    "ogDescription": "Deducción del 100% como gasto, 10% adicional en cuota del IS y menos cotizaciones. Calcule el ahorro para su empresa en 60 segundos."
+  },
+  "breadcrumb": [
+    { "nombre": "Inicio", "url": "/" },
+    { "nombre": "Previsión Social Empresarial", "url": "/prevision-social-empresarial/" },
+    { "nombre": "Plan de Pensiones de Empleo para pymes", "url": "/plan-pensiones-empleo-pymes/" }
+  ],
+  "hero": {
+    "kicker": "Plan de Pensiones de Empleo · Pymes",
+    "h1": "Plan de Pensiones de Empleo para pymes",
+    "subtitulo": "La empresa deduce el 100 % de la aportación, obtiene hasta un 10 % adicional en cuota del Impuesto de Sociedades y reduce cotizaciones. El empleado, ni un euro de coste fiscal.",
+    "cta": { "texto": "Calcule su ahorro en 60 segundos", "url": "#calculadora" }
+  },
+  "impacto": [
+    { "dato": "[PENDIENTE-DATO]", "etiqueta": "de trabajadores en pymes sin ningún sistema de previsión de empleo", "fuente": "" },
+    { "dato": "[PENDIENTE-DATO]", "etiqueta": "de tasa de sustitución que perderá la pensión pública en las próximas décadas", "fuente": "" },
+    { "dato": "[PENDIENTE-DATO]", "etiqueta": "de ahorro fiscal medio por empleado y año en una pyme tipo", "fuente": "" }
+  ],
+  "oportunidadFiscal": {
+    "titulo": "La oportunidad fiscal, en cuatro ventajas concretas",
+    "intro": "A diferencia de un gasto ordinario, la aportación a un plan de pensiones de empleo activa cuatro ventajas fiscales que se acumulan:",
+    "ventajas": [
+      {
+        "titulo": "100 % deducible como gasto de personal",
+        "texto": "Las aportaciones de la empresa son gasto de personal deducible en el Impuesto de Sociedades, igual que un salario, reduciendo la base imponible."
+      },
+      {
+        "titulo": "Deducción adicional del 10 % en la cuota del IS",
+        "texto": "Deducción en la cuota íntegra del Impuesto de Sociedades del 10 % de las contribuciones empresariales a partícipes con salario bruto inferior a 27.000 €. Para salarios superiores, la aportación con derecho a deducción se prorratea: aportación de la empresa × 27.000 / salario bruto."
+      },
+      {
+        "titulo": "Reducción en la cuota de la Seguridad Social",
+        "texto": "Reducción en la cuota empresarial de la Seguridad Social por contingencias comunes correspondiente al incremento derivado de la aportación, con un importe máximo de 13 × (23,6 % × 44,1 €) por trabajador y año."
+      },
+      {
+        "titulo": "Coste fiscal cero para el empleado",
+        "texto": "Para el trabajador, las aportaciones de la empresa no tienen coste en su IRPF (no hay ingreso a cuenta), y sus propias aportaciones reducen su base imponible."
+      }
+    ]
+  },
+  "calculadora": {
+    "titulo": "Calculadora de ahorro fiscal",
+    "subtitulo": "Estime el ahorro que un plan de pensiones de empleo generaría a su empresa el primer año. Mueva los valores a su caso.",
+    "disclaimer": "Estimación orientativa a efectos ilustrativos; no constituye asesoramiento fiscal. Verifique su caso con el informe personalizado.",
+    "defaults": { "n": 10, "salario": 24000, "aportEmpresa": 1500, "tipoIS": "general" }
+  },
+  "lead": {
+    "titulo": "Reciba su informe fiscal personalizado en PDF",
+    "subtitulo": "Le preparamos el cálculo detallado para su plantilla y sector, sin coste ni compromiso.",
+    "textoRGPD": "[PENDIENTE-TEXTO-LEGAL] He leído y acepto la política de privacidad y el tratamiento de mis datos para recibir el informe solicitado.",
+    "boton": "Quiero mi informe fiscal"
+  },
+  "faqs": [
+    {
+      "pregunta": "¿Es obligatorio que la empresa aporte lo mismo a todos los empleados?",
+      "respuesta": "Rige un principio de no discriminación, pero se admiten criterios objetivos de diferenciación —por ejemplo, por antigüedad o categoría laboral— siempre que estén definidos en las especificaciones del plan y se apliquen de forma homogénea.",
+      "verificar": true
+    },
+    {
+      "pregunta": "¿Cuál es el límite conjunto de aportación entre empresa y trabajador?",
+      "respuesta": "El límite conjunto de las aportaciones y contribuciones a sistemas de previsión social de empleo es de 10.000 € anuales, resultado de sumar al límite general de 1.500 € un incremento de hasta 8.500 € procedente de contribuciones empresariales (y, en su caso, de aportaciones del trabajador vinculadas a estas).",
+      "verificar": true
+    },
+    {
+      "pregunta": "¿Qué pasa si el empleado ya tiene un plan de pensiones individual?",
+      "respuesta": "Son compatibles. El plan individual se rige por su propio límite general, mientras que la participación en el plan de empleo abre la capacidad adicional de aportación asociada a las contribuciones de la empresa. Conviene revisar los límites conjuntos para optimizar sin excederlos.",
+      "verificar": true
+    },
+    {
+      "pregunta": "¿Cuándo tributa el empleado por lo aportado?",
+      "respuesta": "El empleado no tributa en el momento de la aportación empresarial: la fiscalidad se difiere al momento del cobro de la prestación, que tributa como rendimiento del trabajo. Es el principio de diferimiento característico de estos instrumentos.",
+      "verificar": true
+    },
+    {
+      "pregunta": "¿Puede rescatarse el plan de pensiones de empleo?",
+      "respuesta": "El rescate está sujeto a las contingencias y supuestos de liquidez previstos en la normativa de planes de pensiones (jubilación, incapacidad, fallecimiento, dependencia y determinados supuestos excepcionales como enfermedad grave o desempleo de larga duración), además del supuesto de antigüedad de las aportaciones cuando resulte aplicable.",
+      "verificar": true
+    },
+    {
+      "pregunta": "¿Qué diferencia hay entre un PPE y un PPPC?",
+      "respuesta": "El PPE es el plan de pensiones de empleo de una empresa concreta. El PPPC (plan de pensiones de empleo de promoción conjunta) permite que varias empresas —habitualmente pymes— o autónomos se agrupen en un mismo plan, reduciendo costes y trámites, lo que lo hace especialmente accesible para el tejido de pequeñas y medianas empresas.",
+      "verificar": true
+    },
+    {
+      "pregunta": "¿Desde cuántos empleados tiene sentido plantearse un plan de empleo?",
+      "respuesta": "No hay un mínimo legal para valorarlo, y las fórmulas de promoción conjunta han rebajado mucho el umbral de acceso para pymes pequeñas. La decisión depende más de la política retributiva y de la carga fiscal de la empresa que del número exacto de personas.",
+      "verificar": true
+    }
+  ],
+  "cierre": {
+    "titulo": "Vuelva a la guía completa",
+    "texto": "Este plan es una de las piezas de la previsión social empresarial. Vea cómo encaja con el resto.",
+    "enlace": { "texto": "Guía de Previsión Social Empresarial para pymes", "url": "/prevision-social-empresarial/" }
+  }
+}

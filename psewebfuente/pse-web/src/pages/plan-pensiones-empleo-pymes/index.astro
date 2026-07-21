@@ -1,0 +1,88 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import BloqueEstadistico from '../../components/BloqueEstadistico.astro';
+import BloqueFiscal from '../../components/BloqueFiscal.astro';
+import CalculadoraPPE from '../../components/CalculadoraPPE.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Faq from '../../components/Faq.astro';
+import data from '../../data/ppe-pymes.json';
+
+const site = Astro.site ?? new URL('https://PENDIENTE-DOMINIO.es');
+const abs = (path) => new URL(path, site).href;
+
+// --- JSON-LD: Service + FAQPage + BreadcrumbList ---
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Plan de Pensiones de Empleo para pymes',
+  serviceType: 'Previsión social empresarial',
+  description: data.seo.description,
+  areaServed: 'ES',
+  audience: { '@type': 'BusinessAudience', name: 'Pequeñas y medianas empresas' },
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: data.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.pregunta,
+    acceptedAnswer: { '@type': 'Answer', text: f.respuesta },
+  })),
+};
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: data.breadcrumb.map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.nombre,
+    item: abs(b.url),
+  })),
+};
+---
+<Base
+  title={data.seo.title}
+  description={data.seo.description}
+  canonicalPath={data.seo.canonicalPath}
+  ogTitle={data.seo.ogTitle}
+  ogDescription={data.seo.ogDescription}
+  jsonld={[serviceSchema, faqSchema, breadcrumbSchema]}
+>
+  <nav class="crumbs" aria-label="Migas de pan">
+    {data.breadcrumb.map((b, i) => (
+      i < data.breadcrumb.length - 1
+        ? <>{<a href={b.url}>{b.nombre}</a>}<span>/</span></>
+        : <strong>{b.nombre}</strong>
+    ))}
+  </nav>
+
+  <Hero kicker={data.hero.kicker} h1={data.hero.h1} subtitulo={data.hero.subtitulo} cta={data.hero.cta} />
+
+  <BloqueEstadistico items={data.impacto} />
+
+  <BloqueFiscal titulo={data.oportunidadFiscal.titulo} intro={data.oportunidadFiscal.intro} ventajas={data.oportunidadFiscal.ventajas} />
+
+  <CalculadoraPPE
+    titulo={data.calculadora.titulo}
+    subtitulo={data.calculadora.subtitulo}
+    disclaimer={data.calculadora.disclaimer}
+    defaults={data.calculadora.defaults}
+  />
+
+  <LeadForm
+    id="contacto"
+    titulo={data.lead.titulo}
+    subtitulo={data.lead.subtitulo}
+    textoRGPD={data.lead.textoRGPD}
+    boton={data.lead.boton}
+  />
+
+  <Faq faqs={data.faqs} />
+
+  <section class="cta-band" aria-labelledby="cierre-h">
+    <h3 id="cierre-h">{data.cierre.titulo}</h3>
+    <p>{data.cierre.texto}</p>
+    <a class="btn ghost" href={data.cierre.enlace.url}>{data.cierre.enlace.texto} →</a>
+  </section>
+</Base>

@@ -1,0 +1,80 @@
+---
+/**
+ * Formulario de captación. Netlify Forms (data-netlify) con honeypot antispam.
+ * Incluye un campo oculto "simulacion" que la calculadora rellena con los
+ * parámetros usados, para que el lead llegue con contexto.
+ * Fallback a Google Apps Script documentado en el README.
+ */
+const {
+  id = 'contacto',
+  titulo,
+  subtitulo,
+  textoRGPD,
+  boton = 'Enviar',
+  formName = 'lead-ppe',
+} = Astro.props;
+
+// Sectores CNAE de ejemplo; el consultor puede ampliar la lista.
+const sectores = [
+  'Comercio', 'Hostelería', 'Construcción', 'Industria', 'Transporte y logística',
+  'Servicios profesionales', 'Sanidad y servicios sociales', 'Tecnología', 'Otro',
+];
+---
+<section id={id} class="lead card" aria-labelledby="lead-h">
+  <h2 id="lead-h">{titulo}</h2>
+  {subtitulo && <p class="lede" style="margin-top:0">{subtitulo}</p>}
+
+  <form
+    name={formName}
+    method="POST"
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    action="/gracias/"
+  >
+    <input type="hidden" name="form-name" value={formName} />
+    <input type="hidden" name="simulacion" id="lead-simulacion" value="" />
+    <p class="hp" hidden>
+      <label>No rellenar si eres humano: <input name="bot-field" /></label>
+    </p>
+
+    <div class="grid-2">
+      <label>Nombre y apellidos
+        <input type="text" name="nombre" required autocomplete="name" />
+      </label>
+      <label>Email de empresa
+        <input type="email" name="email" required autocomplete="email" />
+      </label>
+      <label>Teléfono (opcional)
+        <input type="tel" name="telefono" autocomplete="tel" />
+      </label>
+      <label>Nº de empleados
+        <input type="number" name="empleados" min="1" inputmode="numeric" />
+      </label>
+      <label class="full">Sector / CNAE
+        <select name="sector">
+          <option value="">Seleccione…</option>
+          {sectores.map((s) => <option value={s}>{s}</option>)}
+        </select>
+      </label>
+    </div>
+
+    <label class="rgpd">
+      <input type="checkbox" name="rgpd" required />
+      <span>{textoRGPD}</span>
+    </label>
+
+    <button class="btn" type="submit">{boton}</button>
+  </form>
+</section>
+
+<style>
+  .lead { margin: 30px 0; }
+  form { margin-top: 16px; }
+  label { display: block; font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 12px; }
+  label.full { grid-column: 1 / -1; }
+  input, select { width: 100%; margin-top: 6px; background: var(--bg); border: 1.5px solid var(--line); border-radius: 10px; color: var(--ink); font-size: 15px; padding: 11px 13px; font-family: var(--font); font-weight: 400; }
+  input:focus, select:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+  .rgpd { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; font-size: 13px; color: var(--muted); margin: 6px 0 16px; }
+  .rgpd input { width: auto; margin-top: 3px; accent-color: var(--brand); }
+  .hp { position: absolute; left: -9999px; }
+</style>

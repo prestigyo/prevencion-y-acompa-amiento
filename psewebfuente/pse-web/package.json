@@ -1,0 +1,17 @@
+{
+  "name": "pse-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Previsión Social Empresarial — página pilar + landing PPE + calculadora de ahorro fiscal (captación de leads).",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node src/lib/calculadoraPPE.test.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.1.3",
+    "@astrojs/sitemap": "^3.7.3"
+  }
+}

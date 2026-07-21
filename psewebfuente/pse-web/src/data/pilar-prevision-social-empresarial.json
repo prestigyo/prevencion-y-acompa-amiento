@@ -1,0 +1,120 @@
+{
+  "slug": "prevision-social-empresarial",
+  "seo": {
+    "title": "Previsión Social Empresarial para Pymes 2026 | Guía fiscal completa",
+    "description": "Guía práctica de previsión social empresarial para pymes en 2026: cómo reducir el Impuesto de Sociedades y las cotizaciones cuidando a su plantilla. Plan de pensiones de empleo, retribución flexible y más.",
+    "canonicalPath": "/prevision-social-empresarial/",
+    "ogTitle": "Previsión Social Empresarial: la decisión fiscal que además fideliza a su plantilla",
+    "ogDescription": "Todo lo que un gerente o CFO de pyme necesita saber en 2026 para convertir la previsión social en ahorro fiscal real."
+  },
+  "breadcrumb": [
+    { "nombre": "Inicio", "url": "/" },
+    { "nombre": "Previsión Social Empresarial", "url": "/prevision-social-empresarial/" }
+  ],
+  "hero": {
+    "kicker": "Guía fiscal para pymes · 2026",
+    "h1": "Previsión Social Empresarial: cómo pagar menos Impuesto de Sociedades cuidando a su plantilla",
+    "subtitulo": "Una guía de consultor, sin humo comercial, para gerentes y directores financieros de pymes que quieren entender cómo la previsión social se ha convertido en una de las palancas fiscales más eficientes que existen.",
+    "cta": { "texto": "Calcule el ahorro de un plan de empleo", "url": "/plan-pensiones-empleo-pymes/#calculadora" }
+  },
+  "intro": [
+    "Durante años, la previsión social empresarial se percibió como un asunto de recursos humanos: un extra bienintencionado para las grandes compañías, difícil de justificar en una pyme con la caja ajustada. En 2026 esa lectura ha quedado obsoleta. La combinación de incentivos en el Impuesto de Sociedades, reducciones en las cotizaciones a la Seguridad Social y ventajas para el trabajador ha convertido estas herramientas en una decisión primero fiscal y, solo después, de política de personal.",
+    "Esta guía recorre, sección a sección, las principales figuras de previsión social a disposición de una pyme española, para qué sirve cada una y qué ventaja fiscal concreta ofrece. No encontrará aquí promesas de rentabilidad ni nombres de aseguradoras: encontrará el criterio necesario para saber qué preguntar y por dónde empezar."
+  ],
+  "secciones": [
+    {
+      "id": "que-es",
+      "h2": "Qué es la previsión social empresarial y por qué en 2026 es una decisión fiscal",
+      "parrafos": [
+        "La previsión social empresarial agrupa el conjunto de instrumentos con los que una empresa canaliza ahorro e indemnizaciones a favor de sus empleados, de sus socios o de sí misma: planes de pensiones de empleo, seguros colectivos de ahorro-jubilación, sistemas de retribución flexible o coberturas de fallecimiento e invalidez, entre otros.",
+        "Lo que ha cambiado no es la naturaleza de estas figuras, sino su tratamiento fiscal. El legislador ha decidido incentivar de forma deliberada que las empresas —y en particular las pymes— destinen recursos a la previsión de su plantilla. Lo hace por tres vías simultáneas: permitiendo deducir esas aportaciones como gasto, añadiendo deducciones específicas en la cuota del impuesto y reduciendo las cotizaciones sociales asociadas.",
+        "El resultado es contraintuitivo pero real: en muchos casos, una parte relevante de lo que la empresa aporta a favor de su equipo vuelve a la propia empresa el primer año en forma de menor factura fiscal. Cuidar a la plantilla deja de ser un coste puro para convertirse en una asignación eficiente de recursos que, de otro modo, se habrían ido íntegros en impuestos.",
+        "Para un gerente o un director financiero, la pregunta ya no es «¿puedo permitirme un plan para mis empleados?», sino «¿cuánto me está costando no tenerlo?». Las secciones siguientes desglosan las herramientas disponibles y el papel fiscal de cada una."
+      ],
+      "enlace": null
+    },
+    {
+      "id": "plan-pensiones-empleo",
+      "h2": "Plan de Pensiones de Empleo (PPE / PPPC): el instrumento estrella",
+      "parrafos": [
+        "El plan de pensiones de empleo —y su variante simplificada, el plan de pensiones de empleo de promoción conjunta (PPPC), pensada precisamente para que varias pymes o autónomos accedan a costes razonables— es hoy la figura con el paquete de incentivos más potente.",
+        "Las aportaciones que hace la empresa son gasto de personal deducible en el Impuesto de Sociedades. A ello se suma una deducción específica en la cuota íntegra del impuesto por las contribuciones a empleados con salarios más modestos, y una reducción en la cotización a la Seguridad Social por contingencias comunes. Para el empleado, además, la aportación de la empresa no le genera coste fiscal en su IRPF.",
+        "Es, con diferencia, la herramienta que mejor combina fidelización del equipo y eficiencia fiscal, y por eso es la primera que hemos desarrollado en detalle, con una calculadora que estima el ahorro para su caso concreto."
+      ],
+      "enlace": {
+        "texto": "Ver la guía del Plan de Pensiones de Empleo para pymes y calcular su ahorro",
+        "url": "/plan-pensiones-empleo-pymes/",
+        "publicada": true
+      }
+    },
+    {
+      "id": "retribucion-flexible",
+      "h2": "Retribución flexible: el beneficio a coste cero para la empresa",
+      "parrafos": [
+        "La retribución flexible permite que el empleado destine, voluntariamente, una parte de su salario bruto (con el límite del 30 % de sus percepciones salariales) a productos con ventaja fiscal —entre ellos, seguros de ahorro dirigidos a la jubilación— en lugar de recibirlo en nómina.",
+        "Su gran atractivo es que no supone un desembolso adicional para la empresa: se reordena la retribución existente. El empleado mejora su fiscalidad y su ahorro finalista; la empresa gana una herramienta de fidelización sin incrementar su masa salarial. De ahí la etiqueta clásica: «el beneficio a coste cero»."
+      ],
+      "enlace": {
+        "texto": "Retribución flexible para pymes",
+        "url": "#proximamente",
+        "publicada": false
+      }
+    },
+    {
+      "id": "sucesion-hombre-clave",
+      "h2": "Sucesión y protección del socio o persona clave",
+      "parrafos": [
+        "Muchas pymes descansan sobre una o dos personas: el socio fundador, el director técnico, quien tiene la cartera de clientes en la cabeza. Si esa persona falta, el problema no es solo humano, también es financiero: hay que recomprar participaciones a los herederos, cubrir el hueco o sostener la tesorería mientras la empresa se reorganiza.",
+        "Los seguros de socio o de «persona clave» aportan un capital en ese momento crítico, y suelen articularse de la mano de los pactos entre socios para dar liquidez a la operación. Es una pieza de previsión menos conocida pero decisiva para la continuidad del negocio."
+      ],
+      "enlace": {
+        "texto": "Seguro de socio y persona clave",
+        "url": "#proximamente",
+        "publicada": false
+      }
+    },
+    {
+      "id": "excedentes-tesoreria",
+      "h2": "Ahorro para excedentes de tesorería",
+      "parrafos": [
+        "No toda la previsión social mira al empleado. Una empresa con excedentes de tesorería puede canalizarlos hacia productos de ahorro —con rentabilidad garantizada o vinculada a mercados, según su perfil de riesgo— para dar rendimiento a un capital que, parado en cuenta, pierde valor frente a la inflación.",
+        "Es una alternativa a valorar para imprevistos futuros o gastos ya previstos, que ordena la política financiera de la empresa sin asumir riesgos que no correspondan a su perfil."
+      ],
+      "enlace": {
+        "texto": "Ahorro de excedentes de tesorería",
+        "url": "#proximamente",
+        "publicada": false
+      }
+    },
+    {
+      "id": "autonomos-societarios",
+      "h2": "Autónomos societarios: previsión para quien dirige la empresa",
+      "parrafos": [
+        "El autónomo societario —quien dirige y participa en su propia sociedad— vive una situación intermedia entre el trabajador por cuenta ajena y el empresario. Tiene acceso a fórmulas de previsión que le permiten complementar una jubilación que, por la vía pública, suele quedarse corta respecto a sus ingresos en activo.",
+        "Planificar la previsión del propio autónomo societario, con las mismas lentes fiscales que aplicamos a la plantilla, cierra el círculo: la empresa optimiza y quien la dirige también."
+      ],
+      "enlace": {
+        "texto": "Previsión para autónomos societarios",
+        "url": "#proximamente",
+        "publicada": false
+      }
+    }
+  ],
+  "clusterConvenio": {
+    "titulo": "¿Su sector le obliga por convenio a un seguro colectivo? Empiece por ahí",
+    "texto": "Antes de optimizar, cumpla. Numerosos convenios colectivos obligan a la empresa a tener un seguro que cubra a la plantilla frente a fallecimiento o invalidez por accidente. Si su actividad es una de ellas, esa es su primera parada.",
+    "enlaces": [
+      { "nombre": "[PENDIENTE-ENLACE] Seguro de convenio por sector y provincia", "url": "#proximamente", "publicada": false }
+    ]
+  },
+  "ctaIntermedio": {
+    "titulo": "Ponga números a la teoría",
+    "texto": "Un plan de pensiones de empleo puede devolverle una parte importante de lo aportado el primer año vía ahorro fiscal. Estime cuánto en su caso.",
+    "boton": { "texto": "Ir a la calculadora de ahorro fiscal", "url": "/plan-pensiones-empleo-pymes/#calculadora" }
+  },
+  "ctaFinal": {
+    "titulo": "¿Por dónde empezar en su empresa?",
+    "texto": "Cada pyme parte de un punto distinto. Si quiere una lectura ordenada de sus opciones de previsión social y su impacto fiscal, hablemos.",
+    "boton": { "texto": "Solicitar un análisis para mi empresa", "url": "/plan-pensiones-empleo-pymes/#contacto" }
+  }
+}
