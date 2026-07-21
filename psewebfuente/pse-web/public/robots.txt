@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://PENDIENTE-DOMINIO.es/sitemap-index.xml
